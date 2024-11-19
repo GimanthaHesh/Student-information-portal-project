@@ -7,6 +7,7 @@
     margin: 0px auto;
     padding: 5px;
     position: absolute;
+    
 }
 .leftDiv
 {
@@ -21,6 +22,8 @@
     color: #000;
     width: 48%;
     float: right;
+    height: fit-content;
+    
 }
 .profile{
     width: 75%;
