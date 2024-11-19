@@ -32,7 +32,7 @@ const[stu,setStu]=useState(props.students[0]);
                                         <td>{student.address.country}</td>
                                         <td><img src={student.profilePic} alt="profile" width="50px" height="50px"/></td>
 
-                                        <td><button onClick={()=>{setStu(student)}}>View</button></td>
+                                        <td><button id={student.studentId}  onClick={()=>{setStu(student)}}>View</button></td>
 
                                     </tr>
                                 )
