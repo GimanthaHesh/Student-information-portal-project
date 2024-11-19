@@ -42,7 +42,7 @@ const[stu,setStu]=useState(props.students[0]);
                 </table> 
                 </div>     
                 <div className='rightDiv'>
-                        <Profile student={stu}/>
+                        <Profile stu={stu}/>
                 </div>    
         </div>
     );
