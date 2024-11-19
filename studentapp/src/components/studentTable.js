@@ -3,7 +3,7 @@ export default function StudentTable(props) {
     
     return(
         <div className="outerDiv">
-            <div className="leftDiv" > </div>
+            <div className="leftDiv" > 
                 <table border="1">
                     <thead>
 
@@ -18,20 +18,24 @@ export default function StudentTable(props) {
                     </thead>
                     <tbody>
                         {
-                            props.students.map((student) => {
-                                return(
+                            props.students.map((student) => 
+
                                     <tr>
                                         <td>{student.firstName}</td>
                                         <td>{student.lastName}</td>
                                         <td>{student.course}</td>
                                         <td>{student.address.country}</td>
                                         <td><img src={student.profilePic} alt="profile" width="50px" height="50px"/></td>
+
+                                        <td><button>View</button></td>
+
                                     </tr>
-                                );
-                            })
-                        }
+                                )
+                            }
+                        
                     </tbody>
-                </table>          
+                </table> 
+                </div>         
         </div>
     );
 }
