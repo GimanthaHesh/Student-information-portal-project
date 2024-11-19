@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import StudentTable from './components/studentTable';
 import {students} from './data/StudentsDb'
