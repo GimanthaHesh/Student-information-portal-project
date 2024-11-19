@@ -5,7 +5,7 @@ function Profile(props) {
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img className="profile" src={require('../assets/img/1.jpg')} alt="Profile" />
+                    <img className="profile" src={require('../assets/img/'+props.stu.profilePic)} alt="Profile" />
                 </td>
                 <td>ID {props.stu.studentId}</td>
             </tr>
@@ -22,7 +22,10 @@ function Profile(props) {
                 <td>Gender: {props.stu.gender}</td>
             </tr>
             <tr>
-                <td>Address {props.stu.city} {props.stu.country}</td>
+                <td>Address {props.stu.address.city} {props.stu.address.country}</td>
+            </tr>
+            <tr>
+                <td>Skills: {props.stu.skills.map(skills=>skills+=", ")}</td>
             </tr>
         </table>
     </>
